@@ -64,7 +64,7 @@ function usemic() {
 };
 
 function getUserMedia() {
-  (navigator.getUserMedia || navigator.mozGetUserMedia || navigator.webkitGetUserMedia
+  (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.mozGetUserMedia || navigator.webkitGetUserMedia
           || function(){alert('getUserMedia missing')}).apply(navigator, arguments);
 }
 
